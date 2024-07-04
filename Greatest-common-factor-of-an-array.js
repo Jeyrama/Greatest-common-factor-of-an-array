@@ -17,3 +17,5 @@ function greatestCommonFactor(array) {
   }
   return array.reduce(gcf);
 }
+
+// or
