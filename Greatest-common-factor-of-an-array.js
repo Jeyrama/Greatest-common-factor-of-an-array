@@ -6,3 +6,6 @@ you will only receive positive integers.
 
 greatestCommonFactor([46, 14, 20, 88]); // --> 2
 */
+
+
+// Solution
