@@ -13,9 +13,26 @@ greatestCommonFactor([46, 14, 20, 88]); // --> 2
 function greatestCommonFactor(array) {
   function gcf(a, b) {
     if (b === 0) return a;
-    return gcf(b, a%b);
+    return gcf(b, a % b);
   }
   return array.reduce(gcf);
-}
+};
 
 // or
+
+function greatestCommonFactor(array) {
+  let min = Math.min(...array)
+  let maxCommon = 1
+  for(let i = 1 ; i <= min ;i++){
+    for(let j = 0; j < array.length; j++){
+      if (array[j] % i != 0){
+        break;
+      }
+      if (!array[j + 1]){
+        maxCommon = i 
+      }
+    }
+    }
+  
+  return maxCommon
+};
